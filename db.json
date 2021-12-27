@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "img": "./image/TomHardy.jpg",
+      "user": "Thomas Hardy",
+      "notifications": "online",
+      "messages": [{ "value": "Hellow" }, { "value": "bro" }]
+    },
+    {
+      "id": 1,
+      "img": "./image/VinDiesel.jpg",
+      "user": "Vin Diesel",
+      "notifications": "last seen recently",
+      "messages": [{ "value": "Hellow" }, { "value": "How are you?" }]
+    },
+    {
+      "id": 2,
+      "img": "./image/JasonStatham.jpg",
+      "user": "Jason Statham",
+      "notifications": "last seen recently",
+      "messages": [{ "value": "hi" }, { "value": "have a nice day" }]
+    },
+    {
+      "id": 3,
+      "img": "./image/DwayneـJohnson.jpg",
+      "user": "Dwayne Johnson",
+      "notifications": "last seen recently",
+      "messages": [
+        { "value": "Hellow" },
+        { "value": "good luck" },
+        { "value": "❤❤❤❤❤❤" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+body {
+  background-color: rgba(0, 0, 0, 0.356);
+}
+a {
+  text-decoration: none;
+  color: rgb(68, 66, 66);
+}
+img {
+  width: 100po;
+  display: block;
+}
+.wrapper {
+  width: 350px;
+  height: 500px;
+  background-color: white;
+  margin: 20px auto;
+  position: relative;
+}
+
+.users .title {
+  background-color: #2b9dd6;
+  color: white;
+  padding: 10px;
+}
+.users li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.089);
+}
+.user {
+  padding: 10px;
+}
+
+.user .info {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.single-user {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.single-user .info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #2b9dd6;
+  padding: 10px;
+  color: white;
+}
+.single-user .info .info-user {
+  color: white;
+}
+.single-user .info .info-user h5:last-child {
+  font-size: 11px;
+}
+.single-user .info .info-user h5:first-child {
+  font-size: 15px;
+}
+.user .info img,
+.single-user .info img {
+  width: 15%;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.user .info img {
+  cursor: pointer;
+}
+.single-user .info .back-icon {
+  margin-right: 10px;
+  font-size: 17px;
+  cursor: pointer;
+}
+.single-user .text {
+  width: 100%;
+  height: 390px;
+  overflow: auto;
+}
+.single-user .text::-webkit-scrollbar {
+  width: 10px;
+}
+.single-user .text::-webkit-scrollbar-track {
+  background: #c4c1c1;
+}
+.single-user .text::-webkit-scrollbar-thumb {
+  background: rgb(156, 151, 151);
+}
+
+.single-user .text .message {
+  padding: 10px;
+}
+.single-user .text .message span {
+  display: inline-block;
+  background-color: rgb(177, 170, 170);
+  padding: 5px;
+  border-radius: 5px 5px 5px 0px;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.single-user .text .add-comments {
+  text-align: right;
+  padding: 10px;
+}
+.single-user .text .add-comments .add-comment span {
+  display: inline-block;
+  background-color: rgb(177, 170, 170);
+  padding: 5px;
+  border-radius: 5px 5px 0px 5px;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.single-user .comment {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+.single-user .comment input {
+  width: 92%;
+  padding: 5px 10px;
+  outline: none;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.144);
+}
+
+.modal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.788);
+  z-index: 100;
+}
+.modal.open {
+  visibility: visible;
+  opacity: 1;
+}
+.modal img {
+  width: 50%;
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 25px;
+}
+.modal .close:hover {
+  color: red;
+}
